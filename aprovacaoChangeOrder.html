@@ -11,13 +11,13 @@
   
   
   <!-- CSS -->
-  <link href="https://googledrive.com/host/0B7C12ldJ-VYWcmUyS3F0cjhWZzg/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://googledrive.com/host/0B7C12ldJ-VYWcmUyS3F0cjhWZzg/css/datepicker.css" rel="stylesheet">
-  <link href="https://googledrive.com/host/0B7C12ldJ-VYWcmUyS3F0cjhWZzg/css/msgBoxLight.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/datepicker.css" rel="stylesheet">
+  <link href="css/msgBoxLight.css" rel="stylesheet">
   
   
   <!-- CSS Theme -->
-  <link href="https://googledrive.com/host/0B7C12ldJ-VYWcmUyS3F0cjhWZzg/css/moon.theme.css" rel="stylesheet">
+  <link href="css/moon.theme.css" rel="stylesheet">
   
   
   <!--[if lt IE 9]>
@@ -29,10 +29,10 @@
   <script src="https://code.jquery.com/jquery-1.8.2.js"></script>
   
   <!-- JS -->
-  <script src="https://googledrive.com/host/0B7C12ldJ-VYWcmUyS3F0cjhWZzg/js/jquery.msgBox.js"></script>
-  <script src="https://googledrive.com/host/0B7C12ldJ-VYWcmUyS3F0cjhWZzg/js/jquery.mask.min.js"></script>
-  <script src="https://googledrive.com/host/0B7C12ldJ-VYWcmUyS3F0cjhWZzg/js/bootstrapValidator.js"></script>
-  <script src="https://googledrive.com/host/0B7C12ldJ-VYWcmUyS3F0cjhWZzg/js/util.js"></script>
+  <script src="js/jquery.msgBox.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/bootstrapValidator.js"></script>
+  <script src="js/util.js"></script>
 
   
   </head>
@@ -255,7 +255,7 @@
         if(tipoAprovacao == "Gestores"){
             $("#bg-info").html("Obs: A aprovação deste Change Order pode depender da avaliação de outros gestores e obrigatóriamente dos diretores. Você será notificado quando o mesmo for avaliado por todos os envolvidos");  
             $("#bg-info").show();
-        }else{
+        }else if(tipoAprovacao == "Diretoria"){
             $("#bg-info").html("Obs: A aprovação deste Change Order pode depender da avaliação de outros diretores, conforme a configuração do sistema.")  
             $("#bg-info").show();
         }
