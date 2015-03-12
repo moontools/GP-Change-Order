@@ -253,10 +253,10 @@
         var tipoAprovacao = QueryString.tipoAprovacao;
     
         if(tipoAprovacao == "Gestores"){
-            $("#bg-info").html("Obs: A aprovação deste Change Order pode depender da avaliação de outros gestores e obrigatóriamente dos diretores. Você será notificado quando o mesmo for avaliado por todos os envolvidos");  
+            $("#bg-info").html("Obs: A aprovação deste Change Order pode depender da aprovação por outros gestores e obrigatoriamente pelos diretores. Você será notificado quando o mesmo for finalizado.");  
             $("#bg-info").show();
         }else if(tipoAprovacao == "Diretoria"){
-            $("#bg-info").html("Obs: A aprovação deste Change Order pode depender da avaliação de outros diretores, conforme a configuração do sistema.")  
+            $("#bg-info").html("Obs: A aprovação deste Change Order pode depender da aprovação por todos os diretores.")  
             $("#bg-info").show();
         }
         
